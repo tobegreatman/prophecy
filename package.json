@@ -1,0 +1,16 @@
+{
+  "name": "prophecy",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "backend"
+  ],
+  "scripts": {
+    "dev": "powershell -ExecutionPolicy Bypass -File .\\start.ps1",
+    "build:backend": "npm --workspace backend run build",
+    "build": "npm --workspace backend run build",
+    "start": "powershell -ExecutionPolicy Bypass -File .\\start.ps1",
+    "status": "powershell -ExecutionPolicy Bypass -File .\\status.ps1",
+    "stop": "powershell -ExecutionPolicy Bypass -File .\\stop.ps1"
+  }
+}
